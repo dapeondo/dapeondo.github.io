@@ -131,25 +131,24 @@
       }
 
       .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 190px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 10px;
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 120%;
-  transform: translateY(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+        visibility: hidden;
+        width: 190px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 120%;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: opacity 0.3s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
       .tooltip .tooltiptext img {
         width: 50px;
@@ -157,16 +156,16 @@
         margin-bottom: 5px;
       }
 
-     .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -7px;
-  border-width: 7px;
-  border-style: solid;
-  border-color: transparent #555 transparent transparent;
-}
+      .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-top: -7px;
+        border-width: 7px;
+        border-style: solid;
+        border-color: transparent #555 transparent transparent;
+      }
 
       .tooltip:hover .tooltiptext {
         visibility: visible;
@@ -240,7 +239,7 @@
         <li class="Obligadas">
           <a href="#" onclick="Obligatorias_Movistar()"> Obligatorias</a>
         </li>
-		<li class="EV">
+        <li class="EV">
           <a href="#" onclick="EV_Movistar()"> EV's</a>
         </li>
         <li class="Todas">
@@ -261,7 +260,7 @@
         <li class="Obligadas">
           <a href="#" onclick="Obligatorias_Orange()"> Obligatorias</a>
         </li>
-		<li class="EV">
+        <li class="EV">
           <a href="#" onclick="EV_Orange()"> EV's</a>
         </li>
         <li class="Todas">
@@ -278,7 +277,7 @@
         <li class="Obligadas">
           <a href="#" onclick="Obligatorias_Vodafone()"> Obligatorias</a>
         </li>
-		<li class="EV">
+        <li class="EV">
           <a href="#" onclick="EV_Vodafone()"> EV's</a>
         </li>
         <li class="Todas">
@@ -886,19 +885,19 @@
             >
           </td>
           <td
-            style="border: 2px solid green; box-shadow: 5px 5px 5px green"
+            style="border: 2px solid gold; box-shadow: 5px 5px 5px gold"
             class="tooltip SinMarcar"
           >
             <b>642048</b
             ><span class="tooltiptext"
               >5G NR 3500<br />
               N78 case B (60MHZ) HUAWEI<br />
-              Obligatoria</span
+              Frecuente</span
             >
           </td>
         </tr>
         <tr>
-		<td
+          <td
             style="
               border: 2px solid green;
               box-shadow: 5px 5px 5px green;
@@ -1107,8 +1106,7 @@
               Poco Frecuente</span
             >
           </td>
-         
-		  
+
           <td
             style="border: 2px solid gold; box-shadow: 5px 5px 5px gold"
             class="tooltip SinMarcar"
@@ -1120,8 +1118,6 @@
               Frecuente</span
             >
           </td>
-		  
-		  
         </tr>
         <tr>
           <td style="width: 90px" class="tooltip SinMarcar hide"></td>
@@ -1420,14 +1416,14 @@
             >
           </td>
           <td
-            style="border: 2px solid red; box-shadow: 5px 5px 5px red"
+            style="border: 2px solid gold; box-shadow: 5px 5px 5px gold"
             class="tooltip SinMarcar"
           >
             <i>3724</i
             ><span class="tooltiptext"
               >4G LTE<br />
               BANDA 900 B8<br />
-              Poco Frecuente</span
+              Frecuente</span
             >
           </td>
           <td
@@ -2736,11 +2732,8 @@
         table.rows[8].cells[3].className = "tooltip Marcada";
         Luz_Boton(1);
       }
-	  
-	  
-	  
-	  
-	  function Obligatorias_Movistar() {
+
+      function Obligatorias_Movistar() {
         Borrar("Operador-Movistar");
         var table = document.getElementById("Operador-Movistar");
         table.rows[0].cells[0].className = "tooltip Marcada";
@@ -2765,10 +2758,8 @@
         table.rows[8].cells[3].className = "tooltip Marcada";
         Luz_Boton(1);
       }
-	  
-	  
 
-	function EV_Orange() {
+      function EV_Orange() {
         Borrar("Operador-Orange");
         var table = document.getElementById("Operador-Orange");
         table.rows[0].cells[0].className = "tooltip Marcada";
@@ -2781,18 +2772,19 @@
 
         table.rows[0].cells[2].className = "tooltip Marcada";
         table.rows[1].cells[2].className = "tooltip Marcada";
-		table.rows[2].cells[2].className = "tooltip Marcada";
+        table.rows[2].cells[2].className = "tooltip Marcada";
         table.rows[4].cells[2].className = "tooltip Marcada";
         table.rows[5].cells[2].className = "tooltip Marcada";
         table.rows[6].cells[2].className = "tooltip Marcada";
         table.rows[8].cells[2].className = "tooltip Marcada";
 
-        table.rows[0].cells[3].className = "tooltip Marcada";
+       // table.rows[0].cells[3].className = "tooltip Marcada";
         table.rows[1].cells[3].className = "tooltip Marcada";
+        table.rows[2].cells[3].className = "tooltip Marcada";
         table.rows[3].cells[3].className = "tooltip Marcada";
         // ha cambiado a poco frecuente table.rows[5].cells[3].className = "tooltip Marcada";
         table.rows[6].cells[3].className = "tooltip Marcada";
-		table.rows[8].cells[3].className = "tooltip Marcada";
+        table.rows[8].cells[3].className = "tooltip Marcada";
         Luz_Boton(1);
       }
 
@@ -2800,8 +2792,7 @@
         Borrar("Operador-Orange");
         var table = document.getElementById("Operador-Orange");
         table.rows[0].cells[0].className = "tooltip Marcada";
-		table.rows[1].cells[0].className = "tooltip Marcada";
-       
+        table.rows[1].cells[0].className = "tooltip Marcada";
 
         table.rows[0].cells[1].className = "tooltip Marcada";
         table.rows[1].cells[1].className = "tooltip Marcada";
@@ -2820,12 +2811,11 @@
         table.rows[3].cells[3].className = "tooltip Marcada";
         // ha cambiado a poco frecuente table.rows[5].cells[3].className = "tooltip Marcada";
         table.rows[6].cells[3].className = "tooltip Marcada";
-		table.rows[8].cells[3].className = "tooltip Marcada";
+        table.rows[8].cells[3].className = "tooltip Marcada";
         Luz_Boton(1);
       }
 
-
-	function EV_Vodafone() {
+      function EV_Vodafone() {
         Borrar("Operador-Vodafone");
         var table = document.getElementById("Operador-Vodafone");
         table.rows[0].cells[0].className = "tooltip Marcada";
@@ -2839,7 +2829,7 @@
 
         table.rows[1].cells[2].className = "tooltip Marcada";
         //table.rows[2].cells[2].className = "tooltip Marcada";
-		table.rows[5].cells[2].className = "tooltip Marcada";
+        table.rows[3].cells[2].className = "tooltip Marcada";
         table.rows[6].cells[2].className = "tooltip Marcada";
         table.rows[8].cells[2].className = "tooltip Marcada";
         table.rows[10].cells[2].className = "tooltip Marcada";
@@ -2850,8 +2840,7 @@
         table.rows[11].cells[3].className = "tooltip Marcada";
         Luz_Boton(1);
       }
-	  
-	  
+
       function Obligatorias_Vodafone() {
         Borrar("Operador-Vodafone");
         var table = document.getElementById("Operador-Vodafone");
@@ -2981,11 +2970,11 @@
                     // si fila =0 y celda 0 estamos en 2g 1º casilla
                     frecuencias = frecuencias + 23;
                   }
-                  //2g 1800 orange 
+                  //2g 1800 orange
                   if (rowIdx == 1) {
-                  // si fila =1 y celda 0 estamos en 2g 2º casilla
+                    // si fila =1 y celda 0 estamos en 2g 2º casilla
                     frecuencias = frecuencias + 6;
-                   }
+                  }
                 }
                 if (cellIdx == 1) {
                   TRESG = TRESG + cell.innerText + ",";
